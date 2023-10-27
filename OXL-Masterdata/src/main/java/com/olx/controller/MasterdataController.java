@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/olx/masterdata")
 @CrossOrigin(origins="*")
 public class MasterdataController {
-	
+	//Annotations used
 	@Autowired
 	MasterdataService masterdataService;
 	@GetMapping(value="/advertise",produces = MediaType.APPLICATION_JSON_VALUE)
