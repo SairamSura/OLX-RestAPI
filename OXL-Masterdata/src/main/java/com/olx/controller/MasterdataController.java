@@ -23,12 +23,13 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/olx/masterdata")
 @CrossOrigin(origins="*")
 public class MasterdataController {
-	//Annotations used
+	
 	@Autowired
 	MasterdataService masterdataService;
 	@GetMapping(value="/advertise",produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value="Gets All Categories", notes = "This REST API Gives All Categories")
 	public ResponseEntity<Map<String,List<Categories>>> getCategories() {
+		System.out.println("Add Line to these File");
 		return new ResponseEntity<Map<String,List<Categories>>>(masterdataService.getCategories(),HttpStatus.OK);
 	}
 	
