@@ -30,6 +30,7 @@ public class MasterdataController {
 	@ApiOperation(value="Gets All Categories", notes = "This REST API Gives All Categories")
 	public ResponseEntity<Map<String,List<Categories>>> getCategories() {
 		System.out.println("Add Line to these File");
+		System.out.println("ADDED NEW Branch to the OXL-REST-API REPO");
 		return new ResponseEntity<Map<String,List<Categories>>>(masterdataService.getCategories(),HttpStatus.OK);
 	}
 	
